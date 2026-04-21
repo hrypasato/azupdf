@@ -15,8 +15,10 @@ if st.button("Obtener PDF"):
 
         st.markdown(f"[📂 Abrir PDF]({pdf_url})")
 
+        viewer_url = f"https://docs.google.com/gview?embedded=true&url={pdf_url}"
+
         st.markdown(
-            f'<iframe src="{pdf_url}" width="100%" height="600px"></iframe>',
+            f'<iframe src="{viewer_url}" width="100%" height="600px"></iframe>',
             unsafe_allow_html=True
         )
 
